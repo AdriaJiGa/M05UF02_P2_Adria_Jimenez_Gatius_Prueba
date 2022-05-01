@@ -220,16 +220,34 @@ namespace M05UF02_P2_ProyectoSorting_Adria_Jimenez_Gatius
                 j++;
                 k++;
             }
+
         }
+        public void Msort(int[] arr, int l, int r)
+        {
+            if (l < r)
+            {
+                // Find the middle
+                // point
+                int m = l + (r - l) / 2;
 
-       
+                // Sort first and
+                // second halves
+                Msort(arr, l, m);
+                Msort(arr, m + 1, r);
+
+                // Merge the sorted halves
+                MergeSort(arr, l, m, r);
+            }
 
 
 
 
 
 
-    }
+
+
+
+        }
     class Program
     {
         static void Main(string[] args)
@@ -247,7 +265,7 @@ namespace M05UF02_P2_ProyectoSorting_Adria_Jimenez_Gatius
 
             array.Sort(array.QuickSort);
             array.Sort(array.InsertionSort);
-            array.Sort(array.MergeSort);
+            
 
         }
     }
