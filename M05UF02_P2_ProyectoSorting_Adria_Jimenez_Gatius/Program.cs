@@ -249,7 +249,7 @@ namespace M05UF02_P2_ProyectoSorting_Adria_Jimenez_Gatius
             array.Sort(array.QuickSort);
             array.Sort(array.InsertionSort);
             //array.Sort(array.MergeSort);
-            //Prueba
+            //Prueba2
 
         }
     }
